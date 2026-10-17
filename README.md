@@ -1,32 +1,32 @@
-# Portfolio Website — Maaz Ahmad
+# Maaz Ahmad — GitHub Portfolio
 
-Welcome to the repository for my personal portfolio website, hosted via GitHub Pages at [maaz835.github.io](https://maaz835.github.io).
+A responsive, dark-themed personal portfolio for QA/SQA, game development, and SAP ABAP/analytics.
 
----
+## Files
+- `index.html` — complete portfolio website (HTML, CSS, and JavaScript in one file)
+- `README.md` — setup and publishing instructions
 
-## 🚀 About Me
+## Before publishing
+1. Check every experience date and description against your current CV.
+2. Replace `YOUR_EMAIL@example.com` with your real professional email.
+3. Add your LinkedIn profile URL.
+4. Add your CV PDF to this repository as `resume.pdf`, or remove the CV button.
+5. Replace starter project links with direct links to the relevant public repositories.
+6. Only publish code and screenshots you own or have permission to share. Never upload employer/client code, credentials, private data, or confidential SAP information.
 
-I am a **Software Engineer** specializing in:
-* **Game Development & Design:** Unity & Unreal Engine 5
-* **Web Development:** Full-stack web technologies & modern frameworks
-* **Mobile Development:** Flutter
-* **Artificial Intelligence:** Graduate studies in AI
+## Publish for free with GitHub Pages
+1. Sign in to GitHub as `Maaz835`.
+2. Create a **public** repository named exactly `Maaz835.github.io` (GitHub usernames are case-insensitive).
+3. Upload `index.html` and `README.md` to the repository root.
+4. Open **Settings → Pages**.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Select branch `main` and folder `/(root)`, then save.
+7. Wait a few minutes and open `https://maaz835.github.io/`.
 
----
+If you already have a repository with this exact name, use that repository instead. A custom domain is optional and not required.
 
-## 🛠️ Tech Stack & Tools
+## Editing the website
+You can edit `index.html` directly on GitHub using the pencil icon, or locally in VS Code and push the changes to GitHub. GitHub Pages automatically republishes updates from the selected branch.
 
-* **Languages:** C#, C++, Python, Dart, JavaScript / TypeScript, HTML5, CSS3
-* **Game Engines:** Unreal Engine 5, Unity
-* **Frameworks & Mobile:** Flutter, Node.js, React
-* **Version Control & Tools:** Git, GitHub, VS Code, Visual Studio
-
----
-
-## 💻 Local Setup & Development
-
-To run or edit this website locally on your computer:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Maaz835/maaz835.github.io.git](https://github.com/Maaz835/maaz835.github.io.git)
+## Note
+GitHub Pages is suitable for a static portfolio. This site does not need a backend, database, paid hosting, or a JavaScript framework.
