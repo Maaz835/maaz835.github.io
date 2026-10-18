@@ -4,22 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Maaz Ahmad — Software QA Engineer, Game Developer, and SAP ABAP Developer." />
-<meta name="theme-color" content="#050505" />
+<meta name="theme-color" content="#000000" />
 <title>Maaz Ahmad | Game Developer & QA Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap"></noscript>
 <style>
-:root{--bg:#050505;--s1:#0e0e0f;--s2:#161617;--text:#f3f1f1;--muted:#a09a9a;--line:rgba(255,255,255,.09);--red:#ff2b2b;--red-d:#b30000;--glow:rgba(255,43,43,.35);--max:1120px;--cut:14px}
+:root{--bg:#000;--s1:#0a0a0a;--s2:#141414;--text:#f3f1f1;--muted:#a09a9a;--line:rgba(255,255,255,.09);--red:#ff2b2b;--red-d:#b30000;--glow:rgba(255,43,43,.35);--max:1120px;--cut:14px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Barlow,system-ui,sans-serif;line-height:1.65;
-background-image:radial-gradient(ellipse at 85% -5%,rgba(255,43,43,.16),transparent 40%),repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px)}
+background-image:none}
 a{color:inherit;text-decoration:none}
 a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 h1,h2,h3,.brand,.btn{font-family:"Chakra Petch",Barlow,sans-serif}
 .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
-.nav{position:sticky;top:0;z-index:20;background:rgba(5,5,5,.88);backdrop-filter:blur(14px);border-bottom:2px solid var(--red-d)}
+.nav{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.92);backdrop-filter:blur(14px);border-bottom:2px solid var(--red-d)}
 .nav-inner{display:flex;justify-content:space-between;align-items:center;min-height:68px;gap:20px}
 .brand{font-weight:700;font-size:1.25rem;letter-spacing:.06em}.brand span{color:var(--red)}
 .nav-links{display:flex;gap:20px;color:var(--muted);font-size:.92rem;font-weight:600;flex-wrap:wrap}
@@ -99,7 +99,7 @@ h3{margin:0 0 8px;font-size:1.15rem}
 .hl strong{display:block}.hl span{color:var(--muted);font-size:.88rem}
 .skills{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
 .skills .chips{margin-top:12px}
-.contact{border:2px solid var(--red-d);padding:clamp(25px,5vw,48px);background:radial-gradient(ellipse at 100% 0%,rgba(255,43,43,.18),transparent 45%),var(--s1);box-shadow:0 0 40px rgba(255,43,43,.12)}
+.contact{border:2px solid var(--red-d);padding:clamp(25px,5vw,48px);background:var(--s1);box-shadow:none}
 .contact-inner{display:flex;justify-content:space-between;align-items:center;gap:28px}
 .contact p{color:var(--muted);max-width:540px}
 .small-link{text-decoration:underline;text-decoration-color:var(--red-d);text-underline-offset:3px}
@@ -113,7 +113,7 @@ footer{padding:30px 0 40px;color:var(--muted);font-size:.85rem}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 /* Loader */
 body.loading{overflow:hidden}
-#loader{position:fixed;inset:0;z-index:100;background:#050505 radial-gradient(ellipse at 50% 40%,rgba(255,43,43,.18),transparent 55%);display:grid;place-items:center;transition:opacity .5s,visibility .5s}
+#loader{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;transition:opacity .5s,visibility .5s}
 #loader.done{opacity:0;visibility:hidden}
 .ld-box{width:min(340px,80vw);text-align:center;display:grid;justify-items:center;gap:6px}
 .ld-name{font-family:"Chakra Petch",sans-serif;font-size:clamp(1.8rem,8vw,2.6rem);font-weight:700;letter-spacing:.08em;text-shadow:3px 3px 0 var(--red-d);margin-top:34px}
@@ -186,6 +186,17 @@ body.loading{overflow:hidden}
 .b-form input:focus{outline:none;box-shadow:inset 0 0 0 1px var(--red)}
 .b-form button{background:var(--red);color:#050505;border:0;padding:0 18px;font-family:"Chakra Petch",sans-serif;font-weight:700;cursor:pointer}
 @media(max-width:650px){#botBtn{right:6px;bottom:8px}#botPanel{right:12px;bottom:142px;height:min(500px,calc(100vh - 170px))}.hint{display:none}}
+
+/* Certifications */
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cert{display:flex;flex-direction:column;gap:6px;background:rgba(10,10,10,.95);border:1px solid var(--line);border-left:3px solid var(--red);padding:18px 20px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.cert:hover{border-color:var(--red-d);border-left-color:var(--red)}
+.cert-year{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:.82rem;color:var(--red)}
+.cert h3{margin:0;font-size:1.02rem;line-height:1.3}
+.cert-by{color:var(--muted);font-size:.9rem}
+@media(max-width:950px){.cert-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.cert-grid{grid-template-columns:1fr}}
+.skill-cats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}.skill-cats .chips{margin-top:4px}@media(max-width:850px){.skill-cats{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="loading">
@@ -228,10 +239,12 @@ window.cubeHTML='<div class="cube"><div class="f fr"><i class="eye l"></i><i cla
 <nav class="nav-links" id="navLinks" aria-label="Main navigation">
   <a href="#expertise">Expertise</a>
   <a href="#qa-skills">QA Skills</a>
+  <a href="#skills">Skills</a>
   <a href="#projects">Games</a>
   <a href="#ai-blockchain">AI &amp; Blockchain</a>
   <a href="#experience">Experience</a>
   <a href="#education">Education</a>
+  <a href="#certifications">Certifications</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -267,64 +280,46 @@ window.cubeHTML='<div class="cube"><div class="f fr"><i class="eye l"></i><i cla
   <p class="section-intro">Comprehensive testing disciplines, automation frameworks, and quality engineering practices mastered across professional software lifecycles.</p>
 </div>
 <div class="qa-skills-grid">
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🔍</div>
-    <div class="qa-skill-label">Manual Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">⚡</div>
-    <div class="qa-skill-label">Automated Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🔌</div>
-    <div class="qa-skill-label">API Testing &amp; Postman</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">📈</div>
-    <div class="qa-skill-label">Performance &amp; Load Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🔄</div>
-    <div class="qa-skill-label">Regression Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">💨</div>
-    <div class="qa-skill-label">Smoke &amp; Sanity Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🖥️</div>
-    <div class="qa-skill-label">Functional &amp; UI Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🎮</div>
-    <div class="qa-skill-label">Game QA &amp; Playtesting</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🐛</div>
-    <div class="qa-skill-label">Bug Tracking &amp; Jira Reporting</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">📱</div>
-    <div class="qa-skill-label">Mobile App Testing (iOS/Android)</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🌐</div>
-    <div class="qa-skill-label">Cross-Browser Compatibility</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🤝</div>
-    <div class="qa-skill-label">Agile/Scrum QA Workflows</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🧩</div>
-    <div class="qa-skill-label">Integration Testing</div>
-  </div>
-  <div class="qa-skill-btn">
-    <div class="qa-skill-icon" aria-hidden="true">🔒</div>
-    <div class="qa-skill-label">Security &amp; Vulnerability Testing</div>
-  </div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🔍</div><div class="qa-skill-label">Manual Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">⚡</div><div class="qa-skill-label">Automated Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🔌</div><div class="qa-skill-label">API Testing &amp; Postman</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">📈</div><div class="qa-skill-label">Performance &amp; Load Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🔄</div><div class="qa-skill-label">Regression Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">💨</div><div class="qa-skill-label">Smoke &amp; Sanity Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🖥️</div><div class="qa-skill-label">Functional &amp; UI Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🎮</div><div class="qa-skill-label">Game QA &amp; Playtesting</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🐛</div><div class="qa-skill-label">Bug Tracking &amp; Jira Reporting</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">📱</div><div class="qa-skill-label">Mobile App Testing (iOS/Android)</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🌐</div><div class="qa-skill-label">Cross-Browser Compatibility</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🤝</div><div class="qa-skill-label">Agile/Scrum QA Workflows</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🧩</div><div class="qa-skill-label">Integration Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🔒</div><div class="qa-skill-label">Security &amp; Vulnerability Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">📝</div><div class="qa-skill-label">Test Case &amp; Test Plan Design</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🧭</div><div class="qa-skill-label">Exploratory Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🗄️</div><div class="qa-skill-label">Database &amp; SQL Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">♿</div><div class="qa-skill-label">Accessibility &amp; Usability Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🚀</div><div class="qa-skill-label">CI/CD &amp; Release Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🥒</div><div class="qa-skill-label">BDD &amp; Gherkin Scenarios</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">📱</div><div class="qa-skill-label">Appium Mobile Automation</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🎯</div><div class="qa-skill-label">UAT &amp; Acceptance Testing</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">🎮</div><div class="qa-skill-label">Game Balance &amp; Compliance QA</div></div>
+  <div class="qa-skill-btn"><div class="qa-skill-icon" aria-hidden="true">📊</div><div class="qa-skill-label">QA Metrics &amp; Test Reporting</div></div>
 </div>
 </section>
+
+<section class="section wrap" id="skills">
+<div class="section-head"><h2>Technical &amp; Professional Skills</h2><p class="section-intro">A full breakdown of what I work with across games, QA, SAP, AI, web, tooling, and teamwork.</p></div>
+<div class="skill-cats">
+<article class="card"><div class="card-icon" aria-hidden="true">◈</div><h3>Game Development &amp; Interactive Experiences</h3><div class="chips"><span class="chip">Unity</span><span class="chip">Unreal Engine</span><span class="chip">C#</span><span class="chip">C++</span><span class="chip">Game Mechanics</span><span class="chip">Gameplay Programming</span><span class="chip">Game Prototyping</span><span class="chip">2D Game Development</span><span class="chip">3D Game Development</span><span class="chip">Game Physics</span><span class="chip">Animation Systems</span><span class="chip">AI for Games</span><span class="chip">Level Design</span><span class="chip">Game Design</span><span class="chip">Game Balancing</span><span class="chip">Multiplayer Game Development</span><span class="chip">VR Development</span><span class="chip">AR Development</span><span class="chip">MetaHuman</span><span class="chip">Blueprint Visual Scripting</span><span class="chip">Unity UI</span><span class="chip">Performance Optimization</span><span class="chip">Memory Optimization</span><span class="chip">Debugging</span><span class="chip">Profiling</span><span class="chip">Version Control</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Game Testing</span><span class="chip">Gameplay Testing</span><span class="chip">Compatibility Testing</span><span class="chip">FPS Testing</span><span class="chip">Regression Testing</span><span class="chip">Bug Reproduction</span><span class="chip">Test Scenario Design</span><span class="chip">Mobile Game Testing</span><span class="chip">Cross-Platform Testing</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">⌕</div><h3>Quality Assurance &amp; Testing</h3><div class="chips"><span class="chip">Manual Testing</span><span class="chip">Test Automation</span><span class="chip">API Testing</span><span class="chip">Functional Testing</span><span class="chip">Regression Testing</span><span class="chip">Smoke Testing</span><span class="chip">Sanity Testing</span><span class="chip">Integration Testing</span><span class="chip">System Testing</span><span class="chip">Exploratory Testing</span><span class="chip">End-to-End Testing</span><span class="chip">Cross-Browser Testing</span><span class="chip">Mobile Application Testing</span><span class="chip">UI Testing</span><span class="chip">Compatibility Testing</span><span class="chip">Negative Testing</span><span class="chip">Boundary Value Analysis</span><span class="chip">Equivalence Partitioning</span><span class="chip">Test Case Design</span><span class="chip">Test Planning</span><span class="chip">Bug Reporting</span><span class="chip">Defect Lifecycle Management</span><span class="chip">Root Cause Analysis</span><span class="chip">Test Documentation</span><span class="chip">Selenium WebDriver</span><span class="chip">Cypress</span><span class="chip">Postman</span><span class="chip">TestNG</span><span class="chip">Jira</span><span class="chip">Bugzilla</span><span class="chip">SQL Testing</span><span class="chip">CI/CD Testing</span><span class="chip">Agile Testing</span><span class="chip">UAT</span><span class="chip">SDLC</span><span class="chip">STLC</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">▤</div><h3>SAP, Business Intelligence &amp; Analytics</h3><div class="chips"><span class="chip">SAP ABAP</span><span class="chip">ABAP Reports</span><span class="chip">ABAP Debugging</span><span class="chip">Core Data Services (CDS Views)</span><span class="chip">SAP Datasphere</span><span class="chip">SAP Analytics Cloud (SAC)</span><span class="chip">SAP Business Application Programming</span><span class="chip">SAP Data Modeling</span><span class="chip">SAP Data Integration</span><span class="chip">SAP OData</span><span class="chip">SAP HANA</span><span class="chip">SAP Table Design</span><span class="chip">SAP Reporting</span><span class="chip">SAP Basis Fundamentals</span><span class="chip">Power BI</span><span class="chip">Data Visualization</span><span class="chip">Dashboard Development</span><span class="chip">KPI Reporting</span><span class="chip">Data Transformation</span><span class="chip">Data Modeling</span><span class="chip">SQL</span><span class="chip">Business Intelligence</span><span class="chip">ETL Concepts</span><span class="chip">Data Validation</span><span class="chip">Analytical Reporting</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">✦</div><h3>AI &amp; Machine Learning</h3><div class="chips"><span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Deep Learning</span><span class="chip">Artificial Intelligence</span><span class="chip">Generative AI</span><span class="chip">Large Language Models (LLMs)</span><span class="chip">Natural Language Processing (NLP)</span><span class="chip">Computer Vision</span><span class="chip">Image Processing</span><span class="chip">Predictive Modeling</span><span class="chip">Feature Engineering</span><span class="chip">Model Evaluation</span><span class="chip">Data Preprocessing</span><span class="chip">Data Cleaning</span><span class="chip">Exploratory Data Analysis (EDA)</span><span class="chip">Neural Networks</span><span class="chip">Supervised Learning</span><span class="chip">Unsupervised Learning</span><span class="chip">Classification</span><span class="chip">Regression</span><span class="chip">Clustering</span><span class="chip">Recommendation Systems</span><span class="chip">Prompt Engineering</span><span class="chip">AI API Integration</span><span class="chip">Model Deployment</span><span class="chip">Scikit-learn</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Jupyter Notebook</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">{ }</div><h3>Programming &amp; Software Engineering</h3><div class="chips"><span class="chip">Programming Fundamentals</span><span class="chip">Object-Oriented Programming (OOP)</span><span class="chip">Data Structures</span><span class="chip">Algorithms</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C#</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">Dart</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Flutter</span><span class="chip">REST APIs</span><span class="chip">JSON</span><span class="chip">API Integration</span><span class="chip">Web Development</span><span class="chip">Mobile Application Development</span><span class="chip">Responsive Design</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Debugging</span><span class="chip">Software Architecture</span><span class="chip">Design Patterns</span><span class="chip">Database Design</span><span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Firebase</span><span class="chip">Authentication</span><span class="chip">Application Integration</span><span class="chip">Technical Documentation</span><span class="chip">Problem Solving</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">🌐</div><h3>Web Development</h3><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Responsive Web Design</span><span class="chip">CSS Flexbox &amp; Grid</span><span class="chip">DOM Manipulation</span><span class="chip">REST API Integration</span><span class="chip">JSON</span><span class="chip">Back-End Web Development</span><span class="chip">CRM Website Development</span><span class="chip">Firebase</span><span class="chip">Authentication</span><span class="chip">Cross-Browser Compatibility</span><span class="chip">Web Performance Basics</span><span class="chip">SEO Basics</span><span class="chip">GitHub Pages Hosting</span><span class="chip">Git &amp; GitHub</span><span class="chip">Debugging with Browser DevTools</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">⚙</div><h3>DevOps, Tools &amp; Engineering Workflow</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitHub Actions</span><span class="chip">CI/CD Pipelines</span><span class="chip">Jenkins</span><span class="chip">Docker</span><span class="chip">Linux Fundamentals</span><span class="chip">Command Line</span><span class="chip">Postman</span><span class="chip">Jira</span><span class="chip">Agile</span><span class="chip">Scrum</span><span class="chip">Sprint Planning</span><span class="chip">Code Reviews</span><span class="chip">Version Control</span><span class="chip">Build Automation</span><span class="chip">Release Testing</span><span class="chip">Deployment Workflows</span><span class="chip">Environment Configuration</span><span class="chip">Logging</span><span class="chip">Monitoring</span><span class="chip">Issue Tracking</span><span class="chip">Technical Documentation</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">🗂</div><h3>Microsoft Office &amp; Productivity</h3><div class="chips"><span class="chip">Microsoft Word</span><span class="chip">Microsoft PowerPoint</span><span class="chip">Microsoft Excel</span><span class="chip">Excel Formulas &amp; Functions</span><span class="chip">Pivot Tables</span><span class="chip">Charts &amp; Data Analysis</span><span class="chip">Data Entry &amp; Cleaning</span><span class="chip">Report Writing</span><span class="chip">Presentation Design</span><span class="chip">Document Formatting</span><span class="chip">Technical Documentation</span></div></article>
+<article class="card"><div class="card-icon" aria-hidden="true">★</div><h3>Professional &amp; Leadership Skills</h3><div class="chips"><span class="chip">Analytical Thinking</span><span class="chip">Critical Thinking</span><span class="chip">Problem Solving</span><span class="chip">Attention to Detail</span><span class="chip">Technical Communication</span><span class="chip">Team Collaboration</span><span class="chip">Cross-Functional Collaboration</span><span class="chip">Adaptability</span><span class="chip">Fast Learning</span><span class="chip">Time Management</span><span class="chip">Troubleshooting</span><span class="chip">Requirements Analysis</span><span class="chip">Project Coordination</span><span class="chip">Leadership</span><span class="chip">Event Management</span><span class="chip">Presentation Skills</span><span class="chip">Technical Sales</span><span class="chip">Client Communication</span><span class="chip">Research</span><span class="chip">Documentation</span><span class="chip">Continuous Learning</span></div></article>
+</div></section>
 
 <section class="section wrap" id="projects">
 <div class="section-head"><h2>Epic Arcade Creations &amp; Studio Portfolio</h2><p class="section-intro">Live mobile games, a multiplayer battle royale, and indie titles shipped across studio and solo production.</p></div>
@@ -339,7 +334,7 @@ window.cubeHTML='<div class="cube"><div class="f fr"><i class="eye l"></i><i cla
 <div class="carousel videos" id="vidCar"><div class="track" tabindex="0" aria-label="Gameplay videos"></div><div class="ctrl"><button class="arrow prev" aria-label="Previous">‹</button><div class="dots"></div><button class="arrow next" aria-label="Next">›</button></div></div>
 </section>
 
-<!-- AI, ML & BLOCKCHAIN PROJECT SECTION (Carousel Slider with Custom Assets) -->
+<!-- AI, ML & BLOCKCHAIN PROJECT SECTION -->
 <section class="section wrap" id="ai-blockchain">
 <div class="section-head">
   <h2>AI, Machine Learning &amp; Blockchain Projects</h2>
@@ -372,6 +367,30 @@ window.cubeHTML='<div class="cube"><div class="f fr"><i class="eye l"></i><i cla
 <div class="t-item"><div><div class="t-date">2005 – 2015</div><span class="badge">🇵🇰 Lahore, Pakistan</span></div><div><h3>Primary &amp; Secondary Schooling (Playgroup – Grade 8)</h3><p><strong>Beaconhouse School System</strong></p></div></div>
 </div></section>
 
+<section class="section wrap" id="certifications">
+<div class="section-head"><h2>Certifications</h2><p class="section-intro">Professional certifications and training across game development, QA, SAP, data analytics, and mobile development.</p></div>
+<div class="cert-grid">
+<article class="cert"><span class="cert-year">2023</span><h3>Game Design and Development</h3><span class="cert-by">M Labs</span></article>
+<article class="cert"><span class="cert-year">2023</span><h3>Robotics and Programming</h3><span class="cert-by">ACM</span></article>
+<article class="cert"><span class="cert-year">2022</span><h3>SQA Specialist</h3><span class="cert-by">Software Space</span></article>
+<article class="cert"><span class="cert-year">2024</span><h3>Salesforce</h3><span class="cert-by">Salesforce</span></article>
+<article class="cert"><span class="cert-year">2025</span><h3>SAP Datasphere</h3><span class="cert-by">SAP</span></article>
+<article class="cert"><span class="cert-year">2025</span><h3>SAP ABAP Developer</h3><span class="cert-by">SAP</span></article>
+<article class="cert"><span class="cert-year">2025</span><h3>Power BI</h3><span class="cert-by">Microsoft</span></article>
+<article class="cert"><span class="cert-year">2025</span><h3>Game QA</h3><span class="cert-by">Devsinc</span></article>
+<article class="cert"><span class="cert-year">2024</span><h3>Game Designer</h3><span class="cert-by">M Labs</span></article>
+<article class="cert"><span class="cert-year">2022</span><h3>Mobile Application Developer</h3><span class="cert-by">Meta</span></article>
+<article class="cert"><span class="cert-year">2024</span><h3>iOS Development</h3><span class="cert-by">UMT Lahore</span></article>
+<article class="cert"><span class="cert-year">2022</span><h3>Project Management</h3><span class="cert-by">Devsinc</span></article>
+</div>
+<h3 class="sub">Research &amp; Leadership</h3>
+<div class="cert-grid">
+<article class="cert"><span class="cert-year">2024</span><h3>IEEE Research Paper</h3><span class="cert-by">Published research</span></article>
+<article class="cert"><span class="cert-year">2021</span><h3>Chair of Events</h3><span class="cert-by">UMT ACM</span></article>
+<article class="cert"><span class="cert-year">2022</span><h3>General Secretary</h3><span class="cert-by">UMT ACM</span></article>
+<article class="cert"><span class="cert-year">2021 – 2022</span><h3>Seminars, Events &amp; Programming Competitions</h3><span class="cert-by">Led and organized many</span></article>
+</div></section>
+
 <section class="section wrap" id="about">
 <div class="section-head"><h2>Curious by nature. Practical by approach.</h2></div>
 <div class="about">
@@ -379,8 +398,8 @@ window.cubeHTML='<div class="cube"><div class="f fr"><i class="eye l"></i><i cla
 <div class="hl-list"><div class="hl"><strong>Quality mindset</strong><span>Testable requirements, edge cases, clear defect reports</span></div><div class="hl"><strong>Technical range</strong><span>Games, testing, application development, and analytics</span></div><div class="hl"><strong>Team collaboration</strong><span>Communication, feedback, and continuous improvement</span></div></div>
 </div>
 <div class="skills">
-<div class="card"><h3>Tools &amp; technologies</h3><div class="chips"><span class="chip">Git / GitHub</span><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Postman</span><span class="chip">Selenium</span><span class="chip">Cypress</span><span class="chip">Jira</span><span class="chip">SQL</span><span class="chip">SAP ABAP</span><span class="chip">SAP Analytics Cloud</span></div></div>
-<div class="card"><h3>How I work</h3><div class="chips"><span class="chip">Analytical thinking</span><span class="chip">Test planning</span><span class="chip">Debugging</span><span class="chip">Documentation</span><span class="chip">Agile teamwork</span><span class="chip">Problem solving</span><span class="chip">Communication</span></div></div>
+<div class="card"><h3>Tools &amp; technologies</h3><div class="chips"><span class="chip">Git / GitHub</span><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Postman</span><span class="chip">Selenium</span><span class="chip">Cypress</span><span class="chip">Jira</span><span class="chip">SQL</span><span class="chip">SAP ABAP</span><span class="chip">SAP Analytics Cloud</span><span class="chip">SAP Datasphere</span><span class="chip">CDS Views</span><span class="chip">Power BI</span><span class="chip">Unreal Engine 5</span><span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Blockchain</span><span class="chip">Meta Quest VR</span><span class="chip">Photon Fusion</span><span class="chip">iOS Development</span><span class="chip">Salesforce</span><span class="chip">Appium</span><span class="chip">Mobile App Development</span><span class="chip">Robotics</span></div></div>
+<div class="card"><h3>How I work</h3><div class="chips"><span class="chip">Analytical thinking</span><span class="chip">Test planning</span><span class="chip">Debugging</span><span class="chip">Documentation</span><span class="chip">Agile teamwork</span><span class="chip">Problem solving</span><span class="chip">Communication</span><span class="chip">Project management</span><span class="chip">Leadership</span><span class="chip">Event organizing</span><span class="chip">Public speaking</span><span class="chip">Research &amp; writing</span></div></div>
 </div></section>
 
 <section class="section wrap" id="contact"><div class="contact"><div class="contact-inner">
@@ -414,23 +433,33 @@ const tensei=[
 ['https://lcprf0xa7fkdvijs.public.blob.vercel-storage.com/portfolio/chatgpt-image-jul-29-2026-12-34-26-am-ms4rboui-nbuw11.png','Metaverse | MetaHuman | AI','Unreal Engine Project','AI-powered MetaHumans in Unreal Engine 5 that hold real-time conversations, with character backstories and API integration.',['Unreal Engine 5','MetaHuman','Conversational AI'],'https://www.tenseigames.com/portfolio/metaverse-metahuman-ai','Project page'],
 ['https://lcprf0xa7fkdvijs.public.blob.vercel-storage.com/portfolio/arch-viz-p1-4-mrtcznh6-d406ni.jpg','Clerestory House','Unreal Engine Project','A real-time archviz walkthrough of a light-filled coastal home in Unreal Engine 5, using Lumen lighting and Nanite detail.',['Unreal Engine 5','ArchViz','Lumen'],'https://www.tenseigames.com/portfolio/clerestory-house-2','Project page'],
 ];
-const aiProjects=[
-['Blockchain-Projects-2.JPG','Blockchain Project','Decentralized Ledger Implementation',['Blockchain','SmartContracts','Distributed Systems'], 'img'],
-['afff9395-7357-421f-9258-4ec4a9c3da86.PNG','Image Processing of 3D Pose Animation','Computer Vision & Deep Learning',['AI / ML','ImageProcessing','3D Pose','Computer Vision'], 'img'],
-['REALESTATEESCAPER.MP4','Real Estate Scraper','Automated Web Scraping Pipeline',['Python','WebScraping','DataExtraction','Automation'], 'video'],
-['1708418097472.JPG','Election Prediction Model','Predictive Machine Learning',['MachineLearning','DataScience','PredictiveModeling','Python'], 'img']
-];
 const GH='https://github.com/Maaz835';
+/* aiProjects entry format: [file, title, description, tags, optionalLinkUrl, optionalLinkLabel]
+   Videos are detected automatically from the file extension (.mp4/.webm/.mov). */
+const aiProjects=[
+['Blockchain-Projects-2.JPG','Blockchain Project','Decentralized Ledger Implementation',['Blockchain','SmartContracts','Distributed Systems']],
+['afff9395-7357-421f-9258-4ec4a9c3da86.PNG','Image Processing of 3D Pose Animation','Computer Vision & Deep Learning',['AI / ML','ImageProcessing','3D Pose','Computer Vision']],
+['RealEstateScrapper.MP4','Real Estate Scraper','Automated Web Scraping Pipeline',['Python','WebScraping','DataExtraction','Automation']],
+['1708418097472.JPG','Election Prediction Model','Predictive Machine Learning',['MachineLearning','DataScience','PredictiveModeling','Python']],
+['MEDICALCHATBOT.JPG','Medical Chatbot','AI-powered medical assistant chatbot providing health insights and symptom analysis',['Python','AI','NLP','Healthcare'],GH,'GitHub Profile'],
+['HUMANACTIONCLASSIFICATION.jpg','Human Action Classification','Computer vision model classifying human actions and movements in video feeds',['DeepLearning','ComputerVision','TensorFlow','Python'],GH,'GitHub Profile'],
+['heartdiseasedetection.jpg','Heart Disease Detection','Machine learning classification model predicting the likelihood of heart disease based on clinical metrics',['MachineLearning','DataScience','Healthcare','Python'],GH,'GitHub Profile'],
+['age-gender-prediction-detection-deep-learning.jpg','Age & Gender Prediction','Deep learning computer vision system predicting age and facial demographics from images',['DeepLearning','ComputerVision','OpenCV','Python'],GH,'GitHub Profile'],
+['oip.jpg','Emoji Creation Tool','AI-driven image processing and generative application for custom emoji creation',['GenerativeAI','Python','ImageProcessing','AI'],GH,'GitHub Profile'],
+['driverdetection.png','Driver Attention Detection','Computer vision system monitoring driver alertness and detecting drowsiness in real-time',['ComputerVision','OpenCV','Python','Safety'],GH,'GitHub Profile'],
+['diabetesdetection.jpg','Diabetes Detection Model','Predictive machine learning model assessing patient diabetes risk from diagnostic parameters',['MachineLearning','Healthcare','Python','DataScience'],GH,'GitHub Profile'],
+['smarthotelchatbot.jpg','Smart Hotel Booking Chatbot','AI-powered conversational booking assistant for hotel reservations and customer support',['NLP','AI','Chatbot','Python'],GH,'GitHub Profile'],
+['employeeturnoverrprdictor.jpg','Employee Turnover Predictor','Predictive data analytics model forecasting employee attrition risk and retention insights',['MachineLearning','DataAnalytics','Python','PredictiveModeling'],GH,'GitHub Profile']
+];
 const vids=[
 ['0817(1).mp4','Horror / Environmental Gameplay Showcase','A first-person walkthrough showcasing interactive environment design, atmospheric lighting, and immersive soundscapes.',['Game Development','3D Environment','Level Design']],
 ['Milwaukee.mp4','Milwaukee — 2D Pixel Platformer','A 2D arcade platformer with player movement, item pickups, score multipliers, damage-immunity power-ups, and multi-level scoring.',['2D Game','C#','Pixel Art','Gameplay Logic']],
 ['PirateGame.mp4','Pirate Game 3D — Nautical Action','A 3D action-adventure with naval combat, open-water buoyancy physics, and third-person exploration.',['Unity','C#','Naval Combat','3D Game']],
 ['PlankBalancingVR (2).mp4','Float Game VR — Meta Quest','A VR balance and precision puzzle: walk a high-altitude plank, pick up items, and sort them onto exact targets.',['Unity VR','Meta Quest','C#','Spatial Interaction']]
 ];
-const esc=s=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const chips=a=>'<div class="chips">'+a.map(c=>'<span class="chip">'+esc(c)+'</span>').join('')+'</div>';
 const ph=t=>"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='338'><rect width='600' height='338' fill='%23161617'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23ff2b2b' font-size='18' font-family='sans-serif'>"+encodeURIComponent(t)+"</text></svg>";
-
 function build(id,items,render){
   const root=document.getElementById(id), track=root.querySelector('.track'), dots=root.querySelector('.dots');
   const prev=root.querySelector('.prev'), next=root.querySelector('.next');
@@ -451,12 +480,21 @@ function build(id,items,render){
   addEventListener('resize',mk);mk();
 }
 const gameCard=g=>`<article class="card slide"><div class="media"><img src="${esc(g[0])}" alt="${esc(g[1])}" loading="lazy" referrerpolicy="no-referrer"></div><div class="body"><div><div class="label">${esc(g[2])}</div><h3>${esc(g[1])}</h3><p>${esc(g[3])}</p></div><div>${chips(g[4])}<div class="links"><a href="${esc(g[5])}" target="_blank" rel="noreferrer">${esc(g[6])} ↗</a></div></div></div></article>`;
-const aiCard=p=>`<article class="card slide"><div class="media">${p[4]==='video'?`<video controls preload="metadata"><source src="${esc(p[0])}" type="video/mp4">Your browser does not support the video tag.</video>`:`<img src="${esc(p[0])}" alt="${esc(p[1])}" loading="lazy" referrerpolicy="no-referrer">`}</div><div class="body"><div><h3>${esc(p[1])}</h3><p>${esc(p[2])}</p></div><div>${chips(p[3])}</div></div></article>`;
+const aiCard=p=>{
+  const isVid=/\.(mp4|webm|mov)$/i.test(p[0]);
+  const media=isVid
+    ? `<video controls preload="metadata" playsinline><source src="${esc(encodeURI(p[0]))}" type="video/mp4">Your browser does not support the video tag.</video>`
+    : `<img src="${esc(p[0])}" alt="${esc(p[1])}" loading="lazy" referrerpolicy="no-referrer">`;
+  const link=(p[4]&&/^https?:/.test(p[4]))
+    ? `<div class="links"><a href="${esc(p[4])}" target="_blank" rel="noreferrer">${esc(p[5]||'View project')} ↗</a></div>`
+    : '';
+  return `<article class="card slide"><div class="media">${media}</div><div class="body"><div><h3>${esc(p[1])}</h3><p>${esc(p[2])}</p></div><div>${chips(p[3])}${link}</div></div></article>`;
+};
 
 build('gamesCar',games,gameCard);
 build('tenseiCar',tensei,gameCard);
 build('aiCar',aiProjects,aiCard);
-build('vidCar',vids,v=>`<article class="card slide"><div class="media"><video controls preload="metadata"><source src="${esc(v[0])}" type="video/mp4">Your browser does not support the video tag.</video></div><div class="body"><div><h3>${esc(v[1])}</h3><p>${esc(v[2])}</p></div><div>${chips(v[3])}<div class="links"><a href="${GH}" target="_blank" rel="noreferrer">View code on GitHub ↗</a></div></div></div></article>`);
+build('vidCar',vids,v=>`<article class="card slide"><div class="media"><video controls preload="metadata" playsinline><source src="${esc(encodeURI(v[0]))}" type="video/mp4">Your browser does not support the video tag.</video></div><div class="body"><div><h3>${esc(v[1])}</h3><p>${esc(v[2])}</p></div><div>${chips(v[3])}<div class="links"><a href="${GH}" target="_blank" rel="noreferrer">View code on GitHub ↗</a></div></div></div></article>`);
 
 const toggle=document.getElementById('menuToggle'),nav=document.getElementById('navLinks');
 toggle.onclick=()=>toggle.setAttribute('aria-expanded',String(nav.classList.toggle('open')));
@@ -504,7 +542,9 @@ const kb=[
 {k:['who','about','introduce','maaz','yourself','tell me'],a:"Maaz Ahmad is a developer from Lahore now based in Istanbul. He works across game development, Software QA, AI/ML, Blockchain, and SAP ABAP."},
 {k:['game','project','portfolio','built','made','shipped','play','arcade'],a:"Maaz has shipped 7 Android games under Epic Arcade Creations, in addition to AI, machine learning, and blockchain projects."},
 {k:['qa','test','sqa','selenium','cypress','postman','bug','automation','quality'],a:"Maaz specializes in manual and automated testing: API validation with Postman, Selenium and Cypress automation, test planning, and defect tracking in Jira."},
-{k:['ai','ml','blockchain','pose','animation','real estate','scraper','election','prediction','bockchain'],a:"Maaz has worked on a Blockchain project repo, an Image Processing 3D Pose Animation tool, a Real Estate Scraper, and an Election Prediction machine learning model."},
+{k:['ai','ml','blockchain','pose','animation','real estate','scraper','election','prediction','bockchain','chatbot','heart','diabetes','driver','emoji','turnover','age','gender'],a:"Maaz has built a Blockchain project, a 3D Pose Animation image-processing tool, a Real Estate Scraper, an Election Prediction model, plus medical and hotel chatbots, human action classification, heart disease and diabetes detection, age & gender prediction, an emoji creation tool, driver attention detection, and an employee turnover predictor.",l:[['See AI projects','#ai-blockchain']]},
+{k:['skill','skills','tools','technologies','stack','word','excel','powerpoint','web','website','python','sap','abap'],a:"Maaz's skills span game development (Unity, Unreal, C#), QA (Selenium, Cypress, Postman), SAP (ABAP, CDS, Datasphere, SAC), AI/ML (Python, TensorFlow, PyTorch), web development, DevOps tools, and Microsoft Office.",l:[['See all skills','#skills']]},
+{k:['certification','certificate','certified','ieee','acm','secretary','chair','leader','course'],a:"Maaz holds certifications in Game Design, Game QA, SQA, SAP ABAP, SAP Datasphere, Power BI, Salesforce, iOS and Mobile App Development, and Project Management. He also published an IEEE research paper and served as Chair of Events and General Secretary of UMT ACM.",l:[['Certifications','#certifications']]},
 {k:['contact','email','hire','reach','linkedin','github','cv','resume','talk'],a:"You can reach Maaz by email at maazahmad835@gmail.com, on LinkedIn, or GitHub.",l:[['Email','mailto:maazahmad835@gmail.com'],['LinkedIn','https://www.linkedin.com/in/maaz-ahmad-6646a77a/'],GHL,['CV','resume.pdf']]}
 ];
 const quick=['What games has he made?','Tell me about his QA skills','What AI & Blockchain projects?','How can I contact him?'];
@@ -552,7 +592,7 @@ setTimeout(()=>hint.classList.add('off'),11000);
     orbs=[{x:.12,y:.18,r:.5,p:0},{x:.88,y:.5,r:.55,p:2},{x:.4,y:.98,r:.5,p:4}]}
   function frame(t){
     x.clearRect(0,0,W,H);
-    orbs.forEach(function(o){var ox=(o.x+Math.sin(t/9000+o.p)*.08)*W,oy=(o.y+Math.cos(t/11000+o.p)*.08)*H,R=o.r*Math.max(W,H),g=x.createRadialGradient(ox,oy,0,ox,oy,R);g.addColorStop(0,'rgba(255,43,43,.15)');g.addColorStop(1,'rgba(255,43,43,0)');x.fillStyle=g;x.fillRect(0,0,W,H)});
+    orbs.forEach(function(o){var ox=(o.x+Math.sin(t/9000+o.p)*.08)*W,oy=(o.y+Math.cos(t/11000+o.p)*.08)*H,R=o.r*Math.max(W,H),g=x.createRadialGradient(ox,oy,0,ox,oy,R);g.addColorStop(0,'rgba(255,43,43,0)');g.addColorStop(1,'rgba(255,43,43,0)');x.fillStyle=g;x.fillRect(0,0,W,H)});
     var i,j,p,q,dx,dy,d;
     for(i=0;i<pts.length;i++){p=pts[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
       dx=p.x-mx;dy=p.y-my;d=Math.sqrt(dx*dx+dy*dy);if(d<120){p.x+=dx/(d+1)*1.2;p.y+=dy/(d+1)*1.2}}
